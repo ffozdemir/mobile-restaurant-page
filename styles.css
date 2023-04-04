@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100vh;
+  min-width: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-family: "Smythe", cursive, Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Header */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../images/header.jpg);
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  gap: 10px;
+  color: #fff;
+  height: 200px;
+  padding: 20px;
+}
+
+header h1,
+header h2 {
+  margin: 0 30px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+header h2 {
+  font-size: 1.75rem;
+}
+
+/*Main*/
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px;
+  gap: 20px;
+  font-size: 1.5em;
+}
+
+/*Menu Section*/
+
+.menu,
+.menu-item,
+.menu-item-info {
+  display: flex;
+}
+
+.menu,
+.menu-item-info {
+  flex-direction: column;
+}
+
+.menu,
+.menu-item {
+  padding: 20px;
+  gap: 20px;
+}
+
+.menu {
+  align-items: space-around;
+}
+
+.menu-item {
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.menu-item-info {
+  gap: 10px;
+  width: 70%;
+}
+
+/*Menu Buttons*/
+
+.menu-item-btn {
+  width: 60px;
+  height: 50px;
+  font-size: 1.5rem;
+  border-radius: 25px;
+  background-color: #fff;
+  border: 1.5px solid #dedede;
+  cursor: pointer;
+}
+
+.menu-item-btn:hover,
+.menu-item-btn:active {
+  background-color: #949393;
+}
+
+.menu-item-btn:active {
+  transform: scale(1.1);
+}
+
+/*Order Section*/
+
+.order-section,
+.order,
+.order-item,
+.order-total {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.order-section,
+.order {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.order-section,
+.order,
+.order-total {
+  align-items: flex-start;
+}
+
+.order-section,
+.order-item {
+  padding: 20px;
+}
+
+.order-section h3 {
+  width: 100%;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.order,
+.order-total {
+  font-size: 2rem;
+}
+
+.order-total {
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 40px;
+  border-top: 2px solid #393333;
+}
+
+/*Order Buttons*/
+
+.order-total button,
+.order-item button {
+  font-size: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.order-total button {
+  width: 100%;
+  height: 50px;
+  color: #fefefe;
+  background-color: #16db99;
+  border: 1.5px solid #dedede;
+}
+
+.order-item button {
+  border: none;
+  background-color: #eeeded;
+  padding: 5px;
+}
+
+.order-total button:hover,
+.order-total button:active {
+  background-color: #0e6d4d;
+}
+
+.order-item button:hover,
+.order-item button:active {
+  background-color: #949393;
+}
+.order-total button:active,
+.order-item button:active {
+  transform: scale(1.01);
+}
+
+/*Payment Section*/
+
+.hide-payment-btn {
+  align-self: flex-end;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  width: 30px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.hide-payment-btn:hover,
+.hide-payment-btn:active {
+  background-color: #949393;
+}
+
+.payment {
+  display: none;
+}
+
+.payment h3 {
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+/*Payment Buttons*/
+
+.payment-btn:hover,
+.payment-btn:active {
+  background-color: #0e6d4d;
+}
+
+.payment-btn {
+  align-self: center;
+  width: 100%;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  background-color: #16db99;
+  color: #fefefe;
+}
+
+.show-payment {
+  display: flex;
+  font-size: 2em;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  box-shadow: 3px 3px 10px 3px #8f8e8e;
+  margin-top: -100px;
+  margin-left: -170px;
+  background-color: #fefefe;
+}
+
+/*Payment Form*/
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
+}
+
+form input {
+  height: 50px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border: 1.5px solid #dedede;
+  padding: 10px;
+}
+
+/*Images*/
+
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/*Order Completed*/
+
+.order-completed {
+  display: none;
+}
+
+.show-order-completed {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  background-color: #ecfdf5;
+  color: #065f46;
+  padding: 10px 0;
+  margin: 0;
+}
+
+/*Media Queries*/
+
+.pointer-events-none {
+  pointer-events: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}

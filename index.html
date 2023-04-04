@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Smythe&display=swap"
+      rel="stylesheet"
+    />
+    <title>Furkan's Grill House</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="header">
+        <h1>Furkan's Grill House</h1>
+        <h2>The best grills in town</h2>
+      </div>
+    </header>
+    <!-- MAIN -->
+    <div class="main">
+      <!-- MENU SECTION -->
+      <section class="menu-section">
+        <div class="menu"></div>
+      </section>
+      <section>
+        <!-- ORDER SECTION -->
+        <div class="order-section">
+          <h3>Your Order</h3>
+          <div class="order"></div>
+          <div class="order-total"></div>
+        </div>
+      </section>
+      <section>
+        <!-- ORDER COMPLETED SECTION -->
+        <div class="order-completed"></div>
+      </section>
+    </div>
+    <!-- PAYMENT SECTION -->
+    <div class="payment">
+      <form>
+        <button class="hide-payment-btn">X</button>
+        <h3>Enter Card Details</h3>
+        <input
+          class="card-input"
+          type="text"
+          name="card-holder-name"
+          id="card-holder-name"
+          placeholder="Enter your name"
+        />
+        <input
+          class="card-input"
+          type="number"
+          name="card-number"
+          id="card-number"
+          placeholder="Enter card number"
+        />
+        <input
+          class="card-input"
+          type="number"
+          name="card-cvv"
+          id="card-cvv"
+          placeholder="Enter CVV"
+        />
+        <button class="payment-btn" type="submit">Pay</button>
+      </form>
+    </div>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
