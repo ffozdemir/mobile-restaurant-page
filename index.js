@@ -89,12 +89,12 @@ function orderHtmlRender() {
                     <p>${name}
                         <button id="remove-btn-${id}">remove</button>
                     </p>
-                    <p>${price}</p>
+                    <p>$${price}</p>
                   </div>`;
     order.innerHTML += html;
   });
   const orderTotal = document.querySelector(".order-total");
-  orderTotal.innerHTML = `<p>Total price:</p><p>${calculateTotalPrice()}</p><button class="complete-order-btn">Complete order</button>`;
+  orderTotal.innerHTML = `<p>Total price:</p><p>$${calculateTotalPrice()}</p><button class="complete-order-btn">Complete order</button>`;
 }
 
 //CALCULATE TOTAL PRICE
