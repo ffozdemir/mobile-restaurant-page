@@ -71,7 +71,7 @@ function showOrderCompletedText() {
   const cardHolderName = document.getElementById("card-holder-name").value;
   orderCompleted.innerHTML = `<p>Thank you ${cardHolderName} for your order!</p><p>Order details: ${selectedMenuItems.map(
     (item) => item.name
-  )}</p><p>Total price: ${calculateTotalPrice()}</p>`;
+  )}</p><p>Total price: $${calculateTotalPrice()}</p>`;
   orderCompleted.classList.add("show-order-completed");
   setTimeout(function () {
     selectedMenuItems = [];
